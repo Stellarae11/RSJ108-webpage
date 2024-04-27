@@ -202,6 +202,178 @@ Customise the visual style and appearance of your guide.
 - Be aware, you can break your page quite easily with this part of CSS.
 -->         
 
+   <style media="screen" type="text/css">
+
+  /* Define split complementary colors */
+  :root {
+    --primary-color: #ff5733; /* Your primary color */
+    --complementary-color-1: #33ff57; /* First complementary color */
+    --complementary-color-2: #3333ff; /* Second complementary color */
+  }
+
+  /* Adjust tints */
+  .tint-25 {
+    background-color: mix(var(--primary-color), #ffffff, 25%);
+  }
+
+  .tint-50 {
+    background-color: mix(var(--primary-color), #ffffff, 50%);
+  }
+
+  .tint-75 {
+    background-color: mix(var(--primary-color), #ffffff, 75%);
+  }
+
+  /* STRUCTURAL ELEMENTS */
+
+  html {
+    position: relative;
+    min-height: 100%;
+    min-width: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+  }
+
+  body {
+    margin:0 0 130px;
+    width:100%;
+    font-weight:normal;
+    font-family:Arial, sans-serif;         /* CHANGE THE FONT HERE */
+    color: var(--primary-color);         /* Use primary color for text */
+  }  
+
+  /* PAGE LAYOUT */
+
+  header, footer {
+    padding:5%;
+    border:0 10%;
+    background-color: var(--complementary-color-1);          /* Use complementary color for header and footer */
+    width:100%;
+    margin:0px;        
+  }
+
+  footer {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    position: float;
+    height:70px;
+  }
+
+  header img {
+    padding-right: 10%;
+    position: relative;
+  }
+
+  .wrapper {
+    width:80%;
+    max-width:650px;
+    margin:0 auto;
+    padding:30px;
+  }
+
+  /* BASIC STYLES FOR THE PAGE */
+  
+  a {
+    color: var(--complementary-color-2);         /* Use complementary color for links */
+    font-weight:bold;
+  }
+
+  /* Heading styles */
+  h1 {
+    margin:0;
+    width:100%;
+    font-weight:bold;
+    font-family:Arial, sans-serif;          /* CHANGE THE HEADER FONT HERE */
+    color: var(--primary-color);         /* Use primary color for headings */
+  }
+
+  h2, h3, h4 {
+    margin:0 0 0.5em;
+    padding-top: 10px;
+    font-weight:normal;
+  }
+
+  /* Paragraph Text styles */
+  p {
+    margin:16px 0;
+    line-height:1.4;
+    font-weight:normal;
+  }
+
+  /* Styles for unordered lists <ul> */
+  ul {
+    font-family:"Courier New", Courier, monospace;
+    box-shadow:0px 2px 10px #ddd;
+    background-color: var(--primary-color);          /* Use primary color for background */
+    border: 1px solid #555;           /* CHANGE THE THINGS BORDER HERE */
+    padding:0;
+    margin:2em 0 0;
+    position:relative;
+    z-index:200;
+
+  }
+
+  /* Styles for unordered list items <li> */
+  ul li {
+    list-style-type: none;
+    border-top: 1px dotted #555; 
+    font-size:14px;
+    color:#000;
+    height: auto;
+    padding: 7px 10px 5px 25px;
+    list-style-type: square;
+    list-style-position: inside;
+    color:#333;
+  }
+
+  .content {
+    background: #fff;          /* CHANGE THE INSTRUCTION BACKGROUND COLOR HERE */
+  }
+
+  .step-by-step li:before {
+    background: #D3E3E8;          /* CHANGE THE INSTRUCTION NUMBER BACKGROUND COLOR HERE */
+    border-top-left-radius: 50px;          /* CHANGE THE INSTRUCTION SHAPE HERE */
+    border-bottom-left-radius: 50px;
+  }
+
+
+  /* Object styles */
+  .step-by-step img,
+  .step-by-step iframe {
+    width:100%;
+    margin-bottom:10px;
+  }
+
+  img.logo {
+    width:auto;
+    height:100%;
+  }
+
+
+  /* ADVANCED STYLES*/
+
+  /* Styles for the guide introduction wrapper */
+  .introduction {
+    padding:0px;
+    position:relative;
+    margin-bottom:40px;
+    overflow:hidden;
+    background:#fff;
+  }
+
+  hr {
+    border: 0; 
+    height: 0; 
+    border-top: 1px solid #D3E3E8; 
+  }
+
+
+  ul li:first-child {
+    list-style-type: none;
+
     <style media="screen" type="text/css">
 
       /* STRUCTURAL ELEMENTS */
