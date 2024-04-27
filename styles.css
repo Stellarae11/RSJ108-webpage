@@ -15,4 +15,65 @@ h1 {
     font-size: 24px;
 }
 
+/* Tan */
+.tan-100 {
+    background-color: #D9CEBA;
+}
+
+
+.tan-75 {
+    background-color: #E3DACB;
+}
+
+
+.tan-50 {
+    background-color: #ECE7DD;
+}
+
+
+.tan-25 {
+    background-color: #F6F3EE;
+}
+
+
+/* Golden Brown */
+.golden-brown-100 {
+    background-color: #A6783F;
+}
+
+
+.golden-brown-75 {
+    background-color: #BC9A6F;
+}
+
+
+.golden-brown-50 {
+    background-color: #D3BC9F;
+}
+
+
+.golden-brown-25 {
+    background-color: #E9DDCF;
+}
+
+
+/* Green */
+.green-100 {
+    background-color: #ACB291;
+}
+
+
+.green-75 {
+    background-color: #C1C5AD;
+}
+
+
+.green-50 {
+    background-color: #D6D9C8;
+}
+
+
+.green-25 {
+    background-color: #EAECE4;
+}
 
