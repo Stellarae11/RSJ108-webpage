@@ -1,79 +1,94 @@
-/* styles.css */
+/* Define your colors */
+:root {
+  /* Base color */
+  --base-color: #00AEEF; /* Example base color */
 
+  /* Calculate split complementary colors */
+  --complementary-color1: #EF00AE; /* First complementary color */
+  --complementary-color2: #EF7400; /* Second complementary color */
+
+  /* Generate tints */
+  --tint-25: rgba(0, 174, 239, 0.25); /* 25% tint of base color */
+  --tint-50: rgba(0, 174, 239, 0.5); /* 50% tint of base color */
+  --tint-75: rgba(0, 174, 239, 0.75); /* 75% tint of base color */
+
+  /* Other colors */
+  --black: #000000; /* Black */
+  --white: #ffffff; /* White */
+}
 
 /* Define styles for the container */
 .container {
     width: 800px;
     margin: 0 auto;
-    background-color: #f0f0f0;
+    background-color: var(--tint-50); /* Change to 50% tint of base color */
 }
 
 
 /* Define styles for headings */
 h1 {
-    color: blue;
+    color: var(--complementary-color1); /* Change to first complementary color */
     font-size: 24px;
 }
 
 /* Tan */
 .tan-100 {
-    background-color: #D9CEBA;
+    background-color: var(--tint-25); /* Change to 25% tint of base color */
 }
 
 
 .tan-75 {
-    background-color: #E3DACB;
+    background-color: var(--tint-50); /* Change to 50% tint of base color */
 }
 
 
 .tan-50 {
-    background-color: #ECE7DD;
+    background-color: var(--tint-75); /* Change to 75% tint of base color */
 }
 
 
 .tan-25 {
-    background-color: #F6F3EE;
+    background-color: var(--base-color); /* Change to base color */
 }
 
 
 /* Golden Brown */
 .golden-brown-100 {
-    background-color: #A6783F;
+    background-color: var(--complementary-color1); /* Change to first complementary color */
 }
 
 
 .golden-brown-75 {
-    background-color: #BC9A6F;
+    background-color: var(--tint-25); /* Change to 25% tint of base color */
 }
 
 
 .golden-brown-50 {
-    background-color: #D3BC9F;
+    background-color: var(--tint-50); /* Change to 50% tint of base color */
 }
 
 
 .golden-brown-25 {
-    background-color: #E9DDCF;
+    background-color: var(--tint-75); /* Change to 75% tint of base color */
 }
 
 
 /* Green */
 .green-100 {
-    background-color: #ACB291;
+    background-color: var(--complementary-color2); /* Change to second complementary color */
 }
 
 
 .green-75 {
-    background-color: #C1C5AD;
+    background-color: var(--tint-25); /* Change to 25% tint of base color */
 }
 
 
 .green-50 {
-    background-color: #D6D9C8;
+    background-color: var(--tint-50); /* Change to 50% tint of base color */
 }
 
 
 .green-25 {
-    background-color: #EAECE4;
+    background-color: var(--tint-75); /* Change to 75% tint of base color */
 }
-
