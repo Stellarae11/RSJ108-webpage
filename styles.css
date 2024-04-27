@@ -17,78 +17,29 @@
   --white: #ffffff; /* White */
 }
 
-/* Define styles for the container */
-.container {
-    width: 800px;
-    margin: 0 auto;
-    background-color: var(--tint-50); /* Change to 50% tint of base color */
+/* Apply colors to elements */
+
+body {
+  color: var(--black); /* Text color */
 }
 
-
-/* Define styles for headings */
-h1 {
-    color: var(--complementary-color1); /* Change to first complementary color */
-    font-size: 24px;
+header {
+  background-color: var(--base-color); /* Header background */
 }
 
-/* Tan */
-.tan-100 {
-    background-color: var(--tint-25); /* Change to 25% tint of base color */
+header h1,
+header h3 {
+  color: var(--white); /* Heading text color */
 }
 
-
-.tan-75 {
-    background-color: var(--tint-50); /* Change to 50% tint of base color */
+.logo {
+  fill: var(--white); /* Logo color (assuming SVG logo) */
 }
 
-
-.tan-50 {
-    background-color: var(--tint-75); /* Change to 75% tint of base color */
+a {
+  color: var(--base-color); /* Links color */
 }
 
-
-.tan-25 {
-    background-color: var(--base-color); /* Change to base color */
-}
-
-
-/* Golden Brown */
-.golden-brown-100 {
-    background-color: var(--complementary-color1); /* Change to first complementary color */
-}
-
-
-.golden-brown-75 {
-    background-color: var(--tint-25); /* Change to 25% tint of base color */
-}
-
-
-.golden-brown-50 {
-    background-color: var(--tint-50); /* Change to 50% tint of base color */
-}
-
-
-.golden-brown-25 {
-    background-color: var(--tint-75); /* Change to 75% tint of base color */
-}
-
-
-/* Green */
-.green-100 {
-    background-color: var(--complementary-color2); /* Change to second complementary color */
-}
-
-
-.green-75 {
-    background-color: var(--tint-25); /* Change to 25% tint of base color */
-}
-
-
-.green-50 {
-    background-color: var(--tint-50); /* Change to 50% tint of base color */
-}
-
-
-.green-25 {
-    background-color: var(--tint-75); /* Change to 75% tint of base color */
+.introduction {
+  background-color: var(--tint-75); /* Instruction background */
 }
