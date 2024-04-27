@@ -1,0 +1,18 @@
+/* styles.css */
+
+
+/* Define styles for the container */
+.container {
+    width: 800px;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+}
+
+
+/* Define styles for headings */
+h1 {
+    color: blue;
+    font-size: 24px;
+}
+
+
