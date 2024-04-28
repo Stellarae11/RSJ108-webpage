@@ -201,101 +201,6 @@ Customise the visual style and appearance of your guide.
 - The CSS below controls all the colors fonts and positioning on this HTML page.
 - Be aware, you can break your page quite easily with this part of CSS.
 -->         
- /* Define the base colors */
-  :root {
-    --primary-color: #B53407; /* Reddish brown */
-    --secondary-color: #BAA86A; /* Tan */
-    --tertiary-color: #8590A4; /* Grayish blue */
-  }
-
-  /* Tints for primary color */
-  a.link-tint-25 {
-    color: #c45d39; /* 25% tint */
-  }
-
-  a.link-tint-50 {
-    color: #da9a83; /* 50% tint */
-  }
-
-  a.link-tint-75 {
-    color: #edccc1; /* 75% tint */
-  }
-
-  /* Tints for secondary color */
-  header.header-tint-25 {
-    background-color: #cbbe8f; /* 25% tint */
-  }
-
-  header.header-tint-50 {
-    background-color: #ddd4b5; /* 50% tint */
-  }
-
-  header.header-tint-75 {
-    background-color: #eee9da; /* 75% tint */
-  }
-
-  /* Tints for tertiary color */
-  h1.heading-tint-25,
-  h2.heading-tint-25,
-  h3.heading-tint-25,
-  h4.heading-tint-25 {
-    color: #a4acbb; /* 25% tint */
-  }
-
-  h1.heading-tint-50,
-  h2.heading-tint-50,
-  h3.heading-tint-50,
-  h4.heading-tint-50 {
-    color: #c2c8d2; /* 50% tint */
-  }
-
-  h1.heading-tint-75,
-  h2.heading-tint-75,
-  h3.heading-tint-75,
-  h4.heading-tint-75 {
-    color: #e1e3e8; /* 75% tint */
-  }
-
-  /* Logo */
-  img.logo-tint-25 {
-    filter: brightness(25%);
-  }
-
-  img.logo-tint-50 {
-    filter: brightness(50%);
-  }
-
-  img.logo-tint-75 {
-    filter: brightness(75%);
-  }
-
-  /* Text Color */
-  .text-tint-25 {
-    color: #a4acbb; /* 25% tint */
-  }
-
-  .text-tint-50 {
-    color: #c2c8d2; /* 50% tint */
-  }
-
-  .text-tint-75 {
-    color: #e1e3e8; /* 75% tint */
-  }
-
-  /* Instruction Background */
-  div.instruction-tint-25 {
-    background-color: #a4acbb; /* 25% tint */
-  }
-
-  div.instruction-tint-50 {
-    background-color: #c2c8d2; /* 50% tint */
-  }
-
-  div.instruction-tint-75 {
-    background-color: #e1e3e8; /* 75% tint */
-  }
-
-</style>
 
     <style media="screen" type="text/css">
 
@@ -315,8 +220,8 @@ Customise the visual style and appearance of your guide.
         margin:0 0 130px;
         width:100%;
         font-weight:normal;
-        font-family:Arial, sans-serif;         /* CHANGE THE FONT HERE */
-        color:#555;         /* CHANGE THE FONT COLOR HERE */
+        font-family:"Times New Roman", Times, serif;         /* CHANGE THE FONT HERE */
+        color:#c45d39;         /* CHANGE THE FONT COLOR HERE */
       }  
 
       /* PAGE LAYOUT */
@@ -324,7 +229,7 @@ Customise the visual style and appearance of your guide.
       header, footer {
         padding:5%;
         border:0 10%;
-        background-color:#A1D0EB;          /* CHANGE THE HEADER AND FOOTER COLOR HERE */
+        background-color:#eee9da;          /* CHANGE THE HEADER AND FOOTER COLOR HERE */
         width:100%;
         margin:0px;        
       }
@@ -353,7 +258,7 @@ Customise the visual style and appearance of your guide.
       /* BASIC STYLES FOR THE PAGE */
       
       a {
-        color:#1593A1;         /* CHANGE THE LINK COLOR HERE */
+        color:#c2c8d2;         /* CHANGE THE LINK COLOR HERE */
         font-weight:bold;
       }
 
@@ -362,7 +267,7 @@ Customise the visual style and appearance of your guide.
         margin:0;
         width:100%;
         font-weight:bold;
-        font-family:Arial, sans-serif;          /* CHANGE THE HEADER FONT HERE */
+        font-family:"Times New Roman", Times, serif;          /* CHANGE THE HEADER FONT HERE */
       }
 
       h2, h3, h4 {
@@ -382,8 +287,8 @@ Customise the visual style and appearance of your guide.
       ul {
         font-family:"Courier New", Courier, monospace;
         box-shadow:0px 2px 10px #ddd;
-        background-color: #D3E3E8;          /* CHANGE THE THINGS BACKGROUND COLOR HERE */
-        border: 1px solid #555;           /* CHANGE THE THINGS BORDER HERE */
+        background-color: #ddd4b5;          /* CHANGE THE THINGS BACKGROUND COLOR HERE */
+        border: 1px solid #edccc1;           /* CHANGE THE THINGS BORDER HERE */
         padding:0;
         margin:2em 0 0;
         position:relative;
@@ -405,11 +310,11 @@ Customise the visual style and appearance of your guide.
       }
 
       .content {
-        background: #fff;          /* CHANGE THE INSTRUCTION BACKGROUND COLOR HERE */
+        background: #e1e3e8;          /* CHANGE THE INSTRUCTION BACKGROUND COLOR HERE */
       }
 
       .step-by-step li:before {
-        background: #D3E3E8;          /* CHANGE THE INSTRUCTION NUMBER BACKGROUND COLOR HERE */
+        background: #8590a4;          /* CHANGE THE INSTRUCTION NUMBER BACKGROUND COLOR HERE */
         border-top-left-radius: 50px;          /* CHANGE THE INSTRUCTION SHAPE HERE */
         border-bottom-left-radius: 50px;
       }
