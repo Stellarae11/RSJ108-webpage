@@ -204,98 +204,178 @@ Customise the visual style and appearance of your guide.
 
    <style media="screen" type="text/css">
 
-       /* Define the base colors */
-        :root {
-            --primary-color: #B53407; /* Reddish brown */
-            --secondary-color: #BAA86A; /* Tan */
-            --tertiary-color: #8590A4; /* Grayish blue */
-        }
+       <style media="screen" type="text/css">
 
-        /* Tints for primary color */
-        a.link-tint-25 {
-            color: #c45d39; /* 25% tint */
-        }
+  /* Define split complementary colors */
+  :root {
+    --primary-color: #ff5733; /* Your primary color */
+    --complementary-color-1: #33ff57; /* First complementary color */
+    --complementary-color-2: #3333ff; /* Second complementary color */
+  }
 
-        a.link-tint-50 {
-            color: #da9a83; /* 50% tint */
-        }
+  /* Adjust tints */
+  .tint-25 {
+    background-color: mix(var(--primary-color), #ffffff, 25%);
+  }
 
-        a.link-tint-75 {
-            color: #edccc1; /* 75% tint */
-        }
+  .tint-50 {
+    background-color: mix(var(--primary-color), #ffffff, 50%);
+  }
 
-        /* Tints for secondary color */
-        header.header-tint-25 {
-            background-color: #cbbe8f; /* 25% tint */
-        }
+  .tint-75 {
+    background-color: mix(var(--primary-color), #ffffff, 75%);
+  }
 
-        header.header-tint-50 {
-            background-color: #ddd4b5; /* 50% tint */
-        }
+  /* STRUCTURAL ELEMENTS */
 
-        header.header-tint-75 {
-            background-color: #eee9da; /* 75% tint */
-        }
+  html {
+    position: relative;
+    min-height: 100%;
+    min-width: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+  }
 
-        /* Tints for tertiary color */
-        h1.heading-tint-25,
-        h2.heading-tint-25,
-        h3.heading-tint-25,
-        h4.heading-tint-25 {
-            color: #a4acbb; /* 25% tint */
-        }
+  body {
+    margin:0 0 130px;
+    width:100%;
+    font-weight:normal;
+    font-family:Arial, sans-serif;         /* CHANGE THE FONT HERE */
+    color: var(--primary-color);         /* Use primary color for text */
+  }  
 
-        h1.heading-tint-50,
-        h2.heading-tint-50,
-        h3.heading-tint-50,
-        h4.heading-tint-50 {
-            color: #c2c8d2; /* 50% tint */
-        }
+  /* PAGE LAYOUT */
 
-        h1.heading-tint-75,
-        h2.heading-tint-75,
-        h3.heading-tint-75,
-        h4.heading-tint-75 {
-            color: #e1e3e8; /* 75% tint */
-        }
+  header, footer {
+    padding:5%;
+    border:0 10%;
+    background-color: var(--complementary-color-1);          /* Use complementary color for header and footer */
+    width:100%;
+    margin:0px;        
+  }
 
-        /* Logo */
-        img.logo-tint-25 {
-            filter: brightness(25%);
-        }
+  footer {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    position: float;
+    height:70px;
+  }
 
-        img.logo-tint-50 {
-            filter: brightness(50%);
-        }
+  header img {
+    padding-right: 10%;
+    position: relative;
+  }
 
-        img.logo-tint-75 {
-            filter: brightness(75%);
-        }
+  .wrapper {
+    width:80%;
+    max-width:650px;
+    margin:0 auto;
+    padding:30px;
+  }
 
-        /* Text Color */
-        .text-tint-25 {
-            color: #a4acbb; /* 25% tint */
-        }
+  /* BASIC STYLES FOR THE PAGE */
+  
+  a {
+    color: var(--complementary-color-2);         /* Use complementary color for links */
+    font-weight:bold;
+  }
 
-        .text-tint-50 {
-            color: #c2c8d2; /* 50% tint */
-        }
+  /* Heading styles */
+  h1 {
+    margin:0;
+    width:100%;
+    font-weight:bold;
+    font-family:Arial, sans-serif;          /* CHANGE THE HEADER FONT HERE */
+    color: var(--primary-color);         /* Use primary color for headings */
+  }
 
-        .text-tint-75 {
-            color: #e1e3e8; /* 75% tint */
-        }
+  h2, h3, h4 {
+    margin:0 0 0.5em;
+    padding-top: 10px;
+    font-weight:normal;
+  }
 
-        /* Instruction Background */
-        div.instruction-tint-25 {
-            background-color: #a4acbb; /* 25% tint */
-        }
+  /* Paragraph Text styles */
+  p {
+    margin:16px 0;
+    line-height:1.4;
+    font-weight:normal;
+  }
 
-        div.instruction-tint-50 {
-            background-color: #c2c8d2; /* 50% tint */
-        }
+  /* Styles for unordered lists <ul> */
+  ul {
+    font-family:"Courier New", Courier, monospace;
+    box-shadow:0px 2px 10px #ddd;
+    background-color: var(--primary-color);          /* Use primary color for background */
+    border: 1px solid #555;           /* CHANGE THE THINGS BORDER HERE */
+    padding:0;
+    margin:2em 0 0;
+    position:relative;
+    z-index:200;
 
-        div.instruction-tint-75 {
-            background-color: #e1e3e8; /* 75% tint */
+  }
+
+  /* Styles for unordered list items <li> */
+  ul li {
+    list-style-type: none;
+    border-top: 1px dotted #555; 
+    font-size:14px;
+    color:#000;
+    height: auto;
+    padding: 7px 10px 5px 25px;
+    list-style-type: square;
+    list-style-position: inside;
+    color:#333;
+  }
+
+  .content {
+    background: #fff;          /* CHANGE THE INSTRUCTION BACKGROUND COLOR HERE */
+  }
+
+  .step-by-step li:before {
+    background: #D3E3E8;          /* CHANGE THE INSTRUCTION NUMBER BACKGROUND COLOR HERE */
+    border-top-left-radius: 50px;          /* CHANGE THE INSTRUCTION SHAPE HERE */
+    border-bottom-left-radius: 50px;
+  }
+
+
+  /* Object styles */
+  .step-by-step img,
+  .step-by-step iframe {
+    width:100%;
+    margin-bottom:10px;
+  }
+
+  img.logo {
+    width:auto;
+    height:100%;
+  }
+
+
+  /* ADVANCED STYLES*/
+
+  /* Styles for the guide introduction wrapper */
+  .introduction {
+    padding:0px;
+    position:relative;
+    margin-bottom:40px;
+    overflow:hidden;
+    background:#fff;
+  }
+
+  hr {
+    border: 0; 
+    height: 0; 
+    border-top: 1px solid #D3E3E8; 
+  }
+
+
+  ul li:first-child {
+    list-style-type: none;
+
         }
     </style>
 </head>
